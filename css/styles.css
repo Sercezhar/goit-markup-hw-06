@@ -572,6 +572,10 @@ img {
   padding-bottom: 60px;
 }
 
+.footer-align {
+  align-items: baseline;
+}
+
 .footer-contacts {
   display: inline-block;
   margin-right: 70px;
@@ -632,7 +636,6 @@ img {
 }
 
 .social-links-title {
-  margin-top: 12px;
   margin-bottom: 20px;
 
   font-weight: 700;

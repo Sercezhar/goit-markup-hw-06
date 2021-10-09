@@ -574,7 +574,10 @@ img {
 
 .footer-align {
   align-items: baseline;
+  justify-content: space-between;
 }
+
+/*-------------[FOOTER] CONTACTS-------------*/
 
 .footer-contacts {
   display: inline-block;
@@ -628,11 +631,10 @@ img {
   color: var(--accent-color);
 }
 
-/*-------------SOCIAL LINKS-------------*/
+/*-------------[FOOTER] SOCIAL LINKS-------------*/
 
 .social-links {
-  vertical-align: top;
-  display: inline-block;
+  margin-right: 93px;
 }
 
 .social-links-title {
@@ -671,6 +673,87 @@ img {
   height: 20px;
 
   fill: #ffffff;
+}
+
+/*-------------[FOOTER] FORM-------------*/
+
+.sub-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.sub-form input {
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  width: 358px;
+  height: 50px;
+
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sub-form input::placeholder {
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sub-form input:hover {
+  border-color: var(--accent-color);
+}
+
+.sub-form input:focus {
+  color: black;
+  background-color: #ffffff;
+}
+
+.sub-form input:focus-visible {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.sub-btn {
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.sub-btn:hover,
+.sub-btn:focus {
+  background-color: #188ce8;
+}
+
+.sub-form-icon {
+  margin-left: 10px;
+  fill: currentColor;
 }
 
 /*-------------MODAL WINDOW-------------*/
